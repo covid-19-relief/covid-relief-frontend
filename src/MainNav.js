@@ -21,4 +21,9 @@ export default class MainNav extends Component {
     }
 }
 
+// HOME
+// ABOUT?
+// DETAIL
+// OTHER SPREADSHEETS
+// add a router?
 
