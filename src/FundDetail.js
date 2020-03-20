@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import request from 'superagent'
-import { handleFavorite } from './api.js'
-import './residency-card.css';
-
-const user = JSON.parse(window.localStorage.getItem('user'));
+import './fund-card.css';
+import Fund from './Fund.js';
 
 export default class FundDetail extends Component {
 
@@ -13,11 +11,11 @@ export default class FundDetail extends Component {
     componentDidMount = async() => {
         // PORCUPINE
         const fundInfo = await request.get(`${process.env.REACT_APP_DB_URL}/listings/${this.props.match.params.fundId}`);
-      
+    
         if (fundInfo.body) {
-          this.setState({fund: fundInfo.body[0]})
+            this.setState({fund: fundInfo.body[0]})
         }
-      } 
+    } 
     
     render() {
         return (
