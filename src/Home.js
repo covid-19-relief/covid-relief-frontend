@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Search from './Search.js';
-import GMap from './GMap.js';
-import ResidencyCard from './ResidencyCard';
+// import GMap from './GMap.js';
+import Fund from './Fund';
 import request from 'superagent';
 import { getPagedResidencies, getUserFromLocalStorage, getAllResidencies } from './api';
 
