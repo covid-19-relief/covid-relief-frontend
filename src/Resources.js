@@ -7,7 +7,7 @@ export default class Tips extends Component {
 <div className="main">
     <header classname="header">
         <h1 className="h1">             
-        How to survive as an artist on the internet??
+        How to survive??
         </h1>  
             <h5 className="h1">(from everest with love)</h5>
     </header><br></br>

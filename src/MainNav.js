@@ -8,17 +8,19 @@ export default class MainNav extends Component {
                     <Link to='/'>Home</Link>
                     <Link to='/tips'>Tips</Link>
                     <Link to='/about'>About</Link>
-                    {this.props.user && <Link to='/login'>Login</Link>}
-                    {this.props.user &&
                     <div className='welcome'>
                         <Link to='/bookmarks'>Bookmarks</Link>
                         <Link to='/add'>Add a Residency</Link>
                         <Link to='/my/listings'>My Residencies</Link>
-                        <Link to='/login'>{this.props.user.displayName ? 'Hello ' + this.props.user.displayName + '!' : '' }</Link>
                     </div>}
                 </nav>
         )
     }
 }
 
+// HOME
+// ABOUT?
+// DETAIL
+// OTHER SPREADSHEETS
+// add a router?
 
