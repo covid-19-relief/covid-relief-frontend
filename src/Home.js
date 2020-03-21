@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import Search from './Search.js';
+import Search from './Search';
 import request from 'superagent';
 import { getAllFunds, getFundsByState, getFundsBySearch } from './api-services';
+import List from './List';
 
 export default class Home extends Component {
     state = {
