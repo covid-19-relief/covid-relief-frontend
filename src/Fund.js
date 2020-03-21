@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './fund-card.css';
-import request from 'superagent';
 
 export default class Fund extends Component {
     // capitalize = (str) => {

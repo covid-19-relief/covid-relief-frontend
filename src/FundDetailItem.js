@@ -1,21 +1,19 @@
 import React, { Component } from 'react';
-import request from 'superagent'
 import './fund-card.css';
-import Fund from './Fund.js';
+import Fund from './Fund';
+// import { getFund } from './api-services'
 
-export default class FundDetail extends Component {
-
+export default class FundDetailItem extends Component {
     state = {
         fund : {},
     }
-    componentDidMount = async() => {
-        // PORCUPINE
-        const fundInfo = await request.get(`${process.env.REACT_APP_DB_URL}/listings/${this.props.match.params.fundId}`);
-    
-        if (fundInfo.body) {
-            this.setState({fund: fundInfo.body[0]})
-        }
-    } 
+
+    // componentDidMount = async() => {
+    //     const fundInfo = await getFund(this.props.match.params.fundId);
+    //     if (fundInfo) {
+    //         this.setState({fund: fundInfo})
+    //     }
+    // } 
     
     render() {
         return (

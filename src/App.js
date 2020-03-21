@@ -1,24 +1,22 @@
 import React, { Component } from 'react';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
-import PrivateRoute from './PrivateRoute.js';
-import Header from './Header.js';
-import Home from './Home.js';
-import Login from './Login.js';
-import Bookmarks from './Bookmarks.js';
-import About from './About.js';
-import Tips from './Tips.js';
-import AddResidency from './AddResidency.js';
-import EditResidency from './EditResidency.js';
-import MyResidencies from './MyResidencies.js';
-import ResidencyTable from './ResidencyTable.js';
-import UserTable from './UserTable.js';
-import GMap from './GMap.js';
-import ResDetailItem from './ResDetailItem.js';
-import Search from './Search.js';
-import { getUserFromLocalStorage } from './api-services.js';
+import Header from './Header';
+import Home from './Home';
+import About from './About';
+import Resources from './Resources';
+import FundDetail from './FundDetail';
+import Search from './Search';
+import { getUserFromLocalStorage } from './api-services';
+// import PrivateRoute from './PrivateRoute';
+// import Login from './Login';
+// import AddResidency from './AddResidency';
+// import EditResidency from './EditResidency';
+// import MyResidencies from './MyResidencies';
+// import ResidencyTable from './ResidencyTable';
+// import UserTable from './UserTable';
+// import GMap from './GMap';
 
 import './bootstrap-reboot.min.css';
-import './App.css';
 import './style.css';
   
 export default class App extends Component {
@@ -34,7 +32,6 @@ setUser = (userFromLogin) => {
   this.setState({ user: userFromLogin });
 }
 
-
 // Put user into state from localStorage first for subsequent props passing
 componentWillMount = () => {
   const userFromLocalStorage = getUserFromLocalStorage();
@@ -43,26 +40,25 @@ componentWillMount = () => {
   }
 }
 
-  render() {
-
+render() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Header user={this.state.user} />
+        <Header />
         <Switch>
-          <PrivateRoute exact path='/bookmarks' component={Bookmarks} user={this.state.user}/>
+          <Route path='/search' component={Search}/>
+          {/* <PrivateRoute exact path='/bookmarks' component={Bookmarks} user={this.state.user}/>
           <PrivateRoute exact path='/add' component={AddResidency} user={this.state.user} />
           <PrivateRoute exact path='/edit/:id' component={EditResidency} user={this.state.user} />
-          <Route exact path='/search' component={Search} user={this.state.user}/>
           <PrivateRoute exact path='/my/listings/' component={MyResidencies} user={this.state.user} />
-          <Route exact path='/login' render={(props) => <Login {...props} setUser={ this.setUser } user={this.state.user } />} />
-          <Route exact path='/about' component={About} />
-          <Route exact path='/tips' component={Tips} />
           <Route exact path='/map' component={GMap} />
-          <Route exact path="/listings/:residencyId" render={(props) => <ResDetailItem {...props} user={this.state.user} />} />
-          <Route exact path="/admin/listings" component={ResidencyTable} />
-          <Route exact path="/admin/users" component={UserTable} />
-          <Route path='/' render={() => <Home user={this.state.user} />} />
+          <Route exact path='/login' render={(props) => <Login {...props} setUser={ this.setUser } user={this.state.user } />} /> */}
+          <Route path='/about' component={About} />
+          <Route path='/resources' component={Resources} />
+          <Route exact path="/listings/:fundId" render={(props) => <FundDetail {...props} />} />
+          {/* <Route exact path="/admin/listings" component={ResidencyTable} />
+          <Route path="/admin/users" component={UserTable} /> */}
+          <Route exact path='/' render={() => <Home />} />
         </Switch>
       </div>
     </BrowserRouter>
