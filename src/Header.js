@@ -8,9 +8,9 @@ export default class Header extends Component {
     render() {
         return (
             <header className="App-header">
-                <Link to='/'><h1>airSupply</h1></Link>
-                <h6 id="tag-line">an artist in residency world list</h6>
-                <MainNav user={this.props.user} />
+                <Link to='/'><h1>Home</h1></Link>
+                <h6 id="tag-line">COVID-19 Aid Funds</h6>
+                <MainNav />
             </header>  
         )
     }
