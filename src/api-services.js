@@ -45,7 +45,10 @@ export const getFundsBySearch = async (searchQuery) => {
 /* USER ROUTES */
 
 // Retrieve user from local storage
-const user = JSON.parse(localStorage.getItem('user'));
+export const getUserFromLocalStorage = () => {
+  const user = JSON.parse(localStorage.getItem('user'));
+  return user;
+}
 
 // GET route for all users
 export const getAllUsers = async () => {
