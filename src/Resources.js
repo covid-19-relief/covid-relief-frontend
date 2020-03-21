@@ -42,6 +42,10 @@ export default class Resources extends Component {
                             <h5>COVID-19 Resources for Undocumented Communities</h5>
                             <a href="https://docs.google.com/spreadsheets/d/18p9OSlLpSYanIoUC-gEbhVbRMYVUfw4wyrixa9ekGdc/edit#gid=0">Comprehensive list of resources for undocumented individuals and communities affected by COVID-19.  Nationwide resources and state-by-state.</a>
                         </li> 
+                        <li> 
+                            <h5>PDX COVID-19 Resource list</h5>
+                            <a href="https://docs.google.com/spreadsheets/d/1DKH9m36nzZuar563Ier1xPVIGY6Bb3kEDv1c2RcGgqM/htmlview">Comprehensive list of resources for people and communities affected by COVID-19 in the greater Portland area.</a>
+                        </li> 
                     </ul>
                 </main>
             </div>
