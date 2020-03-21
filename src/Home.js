@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import Search from './Search.js';
-// import GMap from './GMap.js';
-import Fund from './Fund';
 import request from 'superagent';
 import { getPagedResidencies, getUserFromLocalStorage, getAllResidencies } from './api';
 
@@ -10,9 +8,9 @@ export default class Home extends Component {
         data: [],
         totalPage: 20,
         pageNumber: 1,
-        resListings: [],
+        funds: [],
         user: {},
-        resState: [],
+        fundState: [],
         loading: false
     }
     
@@ -26,11 +24,7 @@ export default class Home extends Component {
     async pageThing(number) {
         await this.setState({ pageNumber: this.state.pageNumber + number });
         const result = await getPagedResidencies(this.state.pageNumber);
-        this.setState({ data: result });
-        const userFromLocalStorage = getUserFromLocalStorage();
-        if (userFromLocalStorage) {
-            this.setState({ user: userFromLocalStorage });
-        }          
+        this.setState({ data: result });        
     }
 
     handleSearch = (input) => async (e) => {
@@ -38,8 +32,8 @@ export default class Home extends Component {
         this.setState({ loading: true });
         const data = await request.get(`${process.env.REACT_APP_DB_URL}/search?search=${input}`)
         this.setState({
-            resState: data.body,
-            resListings: data.body,
+            fundState: data.body,
+            funds: data.body,
             loading: false
         });
     }
@@ -47,8 +41,8 @@ export default class Home extends Component {
     handleState = async (stateValue) => {
         const data = await request.get(`${process.env.REACT_APP_DB_URL}/listings/state/${stateValue}`)
         this.setState({
-            resState: data.body,
-            resListings: data.body,
+            fundState: data.body,
+            funds: data.body,
             loading: false
         });
     }
@@ -60,13 +54,7 @@ export default class Home extends Component {
                     handleSearch={this.handleSearch}
                     handleState={this.handleState}
                 />
-                <GMap 
-                    resListings={this.state.resListings} 
-                    resCenter={this.state.resCenter}
-                />
-                <ul className='residency-list'>
-                    {this.state.resListings.map(item => <ResidencyCard user={this.props.user} item={item} key={item.id} />)}
-                </ul>
+                <List funds={this.state.funds} />
             </div>
         )
     }
