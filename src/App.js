@@ -20,7 +20,7 @@ import Search from './Search.js';
 import './bootstrap-reboot.min.css';
 import './App.css';
 import './style.css';
-
+  
 export default class App extends Component {
 
 state = {
