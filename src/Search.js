@@ -6,7 +6,8 @@ import './search.css';
 export default class Search extends Component {
     // initialize state
     state = { 
-        resState: [],
+        fundState: [],
+        input: ''
     }
 
     render() {
@@ -22,7 +23,7 @@ export default class Search extends Component {
                     <label>State: 
                         <select className="dropdown"
                             name="state" 
-                            value={this.state.stateInput} 
+                            value={this.state.fundState} 
                             onChange={(e) => this.props.handleState(e.target.value)}
                         >
                             <option value="" selected disabled hidden>--</option>
@@ -82,7 +83,7 @@ export default class Search extends Component {
                     this.state.loading 
                     ? "loading!!"
                     : <List 
-                    resState={this.state.resState} user={this.props.user}/> 
+                    fundState={this.state.fundState} /> 
 
                   }  
             </div>
