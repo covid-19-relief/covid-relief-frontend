@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './fund-card.css';
 import request from 'superagent';
 
@@ -12,15 +13,17 @@ export default class Fund extends Component {
         return (
             <li className='fund-card'>
                 {/* PORCUPINE */}
-                <h3><a href={`/listings/${this.props.item.id}`}><div className='card-section-program-name'>{this.props.item.program_name}</div></a></h3>
+                <h3>{this.props.item.fund_name}</h3>
                 <div className='card-section-description'>
-                <p>{this.capitalize(this.props.item.description)}</p></div>
-                {this.props.item.art_medium &&
-                    <div className='card-section-mediums'>
-                        <h4>Supported Mediums</h4> 
-                        {this.props.item.art_medium}
-                    </div> 
-                }
+                    <p>{this.props.item.description}</p>
+                    { this.props.item.city || this.props.item.state 
+                        ? <p>{this.props.item.city}, {this.props.item.state}</p> 
+                        :
+                    // : this.props.item.city || this.props.item.state 
+                    //     ? <p>{this.props.item.city}, {this.props.item.state}</p> 
+                    // :
+                    }
+                </div>
                 {this.props.item.city && 
                     <div className='card-section-city-state-country'>
                         <h4>Location</h4>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Search from './Search.js';
 import request from 'superagent';
-import { getPagedResidencies, getUserFromLocalStorage, getAllResidencies } from './api';
+import { getPagedFunds, getAllFunds } from './api-services';
 
 export default class Home extends Component {
     state = {
@@ -15,15 +15,15 @@ export default class Home extends Component {
     }
     
     async componentDidMount() {
-        const result = await getPagedResidencies(1);
-        const allListings = await getAllResidencies();
+        const result = await getPagedFunds(1);
+        const allListings = await getAllFunds();
         this.setState({resListings: allListings})
         this.setState({ data: result });
     }
 
     async pageThing(number) {
         await this.setState({ pageNumber: this.state.pageNumber + number });
-        const result = await getPagedResidencies(this.state.pageNumber);
+        const result = await getPagedFunds(this.state.pageNumber);
         this.setState({ data: result });        
     }
 

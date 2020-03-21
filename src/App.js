@@ -15,7 +15,7 @@ import UserTable from './UserTable.js';
 import GMap from './GMap.js';
 import ResDetailItem from './ResDetailItem.js';
 import Search from './Search.js';
-import { getUserFromLocalStorage } from './api.js';
+// import { getUserFromLocalStorage } from './api-services.js';
 
 import './bootstrap-reboot.min.css';
 import './App.css';

@@ -3,7 +3,7 @@ import ResDetailItem from './ResDetailItem.js';
 import request from 'superagent';
 import { Link } from 'react-router-dom';
 
-export default class ResDetail extends Component {
+export default class FundDetail extends Component {
   state = { residency: [] }
 
   componentDidMount = async() => {
