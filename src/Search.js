@@ -78,23 +78,13 @@ export default class Search extends Component {
                     </select>
                 </label>
                 </form>
+                {
+                    this.state.loading 
+                    ? "loading!!"
+                    : <List 
+                    fundState={this.state.fundState} /> 
+                }  
             </div>
         )
     }
-    //         <div className='search'>
-    //             <form onSubmit={this.props.handleSearch}>
-    //       <input type="text" onChange={this.props.handleChange} />
-    //             {/* <form onSubmit={this.props.handleSearch(this.state.input)}> */}
-    //               {/* <input value={this.state.input} onChange={(e) => this.setState({ input: e.target.value })} /> */}
-    //               <button disabled={this.state.loading}>Search</button>
-    //             </form>
-
-    //               {
-    //                 this.state.loading 
-    //                 ? "loading!!"
-    //                 : <List 
-    //                 fundState={this.state.fundState} /> 
-    //               }  
-    //         </div>
-    //     ) }
 }
