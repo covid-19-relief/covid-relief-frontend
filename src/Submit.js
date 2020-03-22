@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+import './submit.css';
 
 export default class Submit extends Component {
   render() {
     return (
-      <div>
+      <div className='submit-div'>
         <h3>Submit/Claim a Fund</h3>
         <p>Please use this contact form if you would like us to add a fund to the list, if you are the administrator of one of the listed funds and would like to update it, or if you have information that one of the listed funds is fraudulent or no longer accepting donations.</p>
         <p>Here are the types of donation opportunities we'd like to add to our list:</p>
@@ -19,6 +20,7 @@ export default class Submit extends Component {
           <li>GoFundMe accounts or similar for individuals or individual families</li>
           <li>Red Cross, pre-existing food banks, or well-known humanitarian organizations that someone could find with an easy Google (unless they are collecting for a COVID-19-specific fund)</li>
         </ul>
+        <iframe title="Submit" src="https://docs.google.com/forms/d/e/1FAIpQLSdLznzvOBamhp92mEFSF0Q0KZDHB18hMeslnKvBT6UVV5oYUw/viewform?embedded=true" width="640" height="2246" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </div>
     )
   }
