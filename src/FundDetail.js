@@ -1,25 +1,32 @@
 import React, { Component } from 'react'
-import FundDetailItem from './FundDetailItem.js';
-import { Link } from 'react-router-dom';
 import { getFund } from './api-services'
 
 export default class FundDetail extends Component {
-  state = { fund: [] }
 
-  componentDidMount = async() => {
-    const fundInfo = await getFund(this.props.match.params.fundId);
-    if (fundInfo) {
-        this.setState({fund: fundInfo})
+  state = { fund: [] }
+  
+  async componentDidMount() {
+    const fund = await getFund(this.props.match.params.fundId);
+    console.log(fund)
+    if (fund) {
+        this.setState({fund: fund})
     }
 } 
-  
   render() {
+    const fund = this.state.fund;
     return (
-      <>
-        <Link to={`favorites/${this.state.fund}`}>
-        {this.state.fund.id && <FundDetailItem item={ this.state.fund } />}
-        </Link>
-      </>
+          <div className='fund-detail'>
+              <h3>{fund.name_of_fund}</h3>
+              <h4>Administered by {fund.administrator}</h4>
+              <p>{fund.purpose}</p>
+              <a href={fund.donate_link}>Donate Here</a><br/>
+              { fund.assistance_link ?
+                <a href={fund.assistance_link}>
+                  Apply for Aid
+                </a>
+                :''
+              }
+          </div>   
     )
   }
 };

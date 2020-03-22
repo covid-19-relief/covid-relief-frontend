@@ -9,14 +9,17 @@ export default class Fund extends Component {
     //     return str.charAt(0).toUpperCase() + str.slice(1)
     // }
 
-    // <Link to={`${URL}/listings/${fund.id}`}>
     
-
+   
 
     render() {
         return (         
             <tr>
-                <td>{this.props.item.name_of_fund}</td>
+                <td>
+                  <Link to={`/listings/${this.props.item.id}`}>
+                    {this.props.item.name_of_fund}
+                  </Link>
+                </td>
                 <td>{this.props.item.beneficiaries}</td>
                 <td>{this.props.item.state}</td>
             </tr>
