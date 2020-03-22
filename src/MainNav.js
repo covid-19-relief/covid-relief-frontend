@@ -7,7 +7,7 @@ export default class MainNav extends Component {
                 <nav>
                     <Link to='/'>Home</Link>
                     <Link to='/resources'>Resources</Link>
-                    <Link to='/about'>About</Link>
+                    <Link to='/submit'>Submit or Claim a Fund</Link>
                     {/* Add admin links here? */}
                     {/* <div className='welcome'>
                         <Link to='/bookmarks'>Bookmarks</Link>
