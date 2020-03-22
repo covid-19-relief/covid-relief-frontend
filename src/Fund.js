@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import shortid from "shortid"
+// import shortid from "shortid"
 
 export default class Fund extends Component {
     // capitalize = (str) => {
