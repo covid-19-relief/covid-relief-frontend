@@ -7,6 +7,7 @@ import Submit from './Submit';
 import Resources from './Resources';
 import FundDetail from './FundDetail';
 import Search from './Search';
+import Splash from './Splash';
 import { getUserFromLocalStorage } from './api-services';
 // import PrivateRoute from './PrivateRoute';
 // import Login from './Login';
@@ -54,12 +55,13 @@ render() {
           <PrivateRoute exact path='/my/listings/' component={MyResidencies} user={this.state.user} />
           <Route exact path='/map' component={GMap} />
           <Route exact path='/login' render={(props) => <Login {...props} setUser={ this.setUser } user={this.state.user } />} /> */}
+          <Route path='/home' component={Home} />
           <Route path='/submit' component={Submit} />
           <Route path='/resources' component={Resources} />
           <Route exact path="/listings/:fundId" render={(props) => <FundDetail {...props} />} />
           {/* <Route exact path="/admin/listings" component={ResidencyTable} />
           <Route path="/admin/users" component={UserTable} /> */}
-          <Route exact path='/' render={() => <Home />} />
+          <Route exact path='/' render={() => <Splash />} />
         </Switch>
       </div>
     </BrowserRouter>
