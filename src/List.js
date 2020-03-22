@@ -1,7 +1,6 @@
-
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
-import Fund from './Fund.js';
+import Fund from './Fund';
 
 export default class List extends Component {
     render() {
@@ -10,7 +9,6 @@ export default class List extends Component {
               <Fund item={object} key={index} />
             </Link>)
         return (
-
                 <main>
                   <ul className='fund-list'>
                     {fund}

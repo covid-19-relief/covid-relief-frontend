@@ -6,21 +6,15 @@ export default class MainNav extends Component {
         return (
                 <nav>
                     <Link to='/'>Home</Link>
-                    <Link to='/tips'>Tips</Link>
+                    <Link to='/resources'>Resources</Link>
                     <Link to='/about'>About</Link>
-                    <div className='welcome'>
+                    {/* Add admin links here? */}
+                    {/* <div className='welcome'>
                         <Link to='/bookmarks'>Bookmarks</Link>
                         <Link to='/add'>Add a Residency</Link>
                         <Link to='/my/listings'>My Residencies</Link>
-                    </div>}
+                    </div>} */}
                 </nav>
         )
     }
 }
-
-// HOME
-// ABOUT?
-// DETAIL
-// OTHER SPREADSHEETS
-// add a router?
-

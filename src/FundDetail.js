@@ -1,25 +1,23 @@
 import React, { Component } from 'react'
-import ResDetailItem from './ResDetailItem.js';
-import request from 'superagent';
+import FundDetailItem from './FundDetailItem.js';
 import { Link } from 'react-router-dom';
+import { getFund } from './api-services'
 
-export default class ResDetail extends Component {
-  state = { residency: [] }
+export default class FundDetail extends Component {
+  state = { fund: [] }
 
   componentDidMount = async() => {
-    const resInfo = await request.get(`${process.env.REACT_APP_DB_URL}/listings/${this.props.match.params.residencyId}`);
-  
-    if (resInfo.body) {
-      this.setState({residency: resInfo.body[0]})
+    const fundInfo = await getFund(this.props.match.params.fundId);
+    if (fundInfo) {
+        this.setState({fund: fundInfo})
     }
-  } 
+} 
   
   render() {
-    const { residency } = this.state;
     return (
       <>
-        <Link to={`favorites/${this.state.residency}`}>
-        {residency.id && <ResDetailItem item={ residency } />}
+        <Link to={`favorites/${this.state.fund}`}>
+        {this.state.fund.id && <FundDetailItem item={ this.state.fund } />}
         </Link>
       </>
     )
