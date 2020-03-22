@@ -1,12 +1,12 @@
 import request from 'superagent';
 
-const URL = `https://covid-19-backend.herokuapp.com/`;
+const URL = `https://covid-19-backend.herokuapp.com`;
 
 /* GET ROUTES FOR FUNDS */
 
 // GET route for all funds
 export const getAllFunds = async () => {
-    const data = await request.get(`${URL}/listings`);
+    const data = request.get(`${URL}/listings`);
     return data;
 }
 

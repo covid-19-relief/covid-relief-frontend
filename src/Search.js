@@ -25,8 +25,9 @@ export default class Search extends Component {
                             name="state" 
                             value={this.state.fundState} 
                             onChange={(e) => this.props.handleState(e.target.value)}
+                            defaultValue=""
                         >
-                            <option value="" selected disabled hidden>--</option>
+                            {/* <option value="" selected disabled hidden>--</option> */}
                             <option value="AL">AL</option>
                             <option value="AK">AK</option>
                             <option value="AZ">AZ</option>

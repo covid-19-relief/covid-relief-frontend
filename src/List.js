@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 // import { Link } from 'react-router-dom';
 import Fund from './Fund';
 
-
-
 export default class List extends Component {
   render() {
     const { funds } = this.props;

@@ -46,7 +46,7 @@ render() {
       <div className="App">
         <Header />
         <Switch>
-          <Route path='/search' component={Search}/>
+          {/* <Route path='/search' component={Search}/> */}
           {/* <PrivateRoute exact path='/bookmarks' component={Bookmarks} user={this.state.user}/>
           <PrivateRoute exact path='/add' component={AddResidency} user={this.state.user} />
           <PrivateRoute exact path='/edit/:id' component={EditResidency} user={this.state.user} />
