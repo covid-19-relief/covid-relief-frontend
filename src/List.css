@@ -1,0 +1,23 @@
+table{
+  width: 80%;
+  margin: 2em;
+}
+
+#reliefListings{
+  display: flex;
+  justify-content: center;
+}
+
+table{
+  border: solid 2px;
+  margin: 1em;
+}
+
+thead{
+  font-size: large;
+  border: solid 2px;
+}
+
+tr{
+  border: dotted 1px
+}
