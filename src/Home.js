@@ -16,8 +16,8 @@ export default class Home extends Component {
     
     async componentDidMount() {
         // const result = await getPagedFunds(1);
-        const allListings = await getAllFunds();
-        this.setState({resListings: allListings})
+        const data = await getAllFunds();
+        this.setState({funds: [data]})
         // this.setState({ data: result });
     }
     
@@ -50,6 +50,7 @@ export default class Home extends Component {
     }
 
     render() {
+        console.log('funds in state', this.state.funds)
         return (
             <div>
                 <Search 
