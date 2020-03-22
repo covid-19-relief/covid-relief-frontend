@@ -6,7 +6,7 @@ export default class List extends Component {
   render() {
     const { funds } = this.props;
     // console.log('List props this.props.funds', funds);
-
+    //created a table below... react was angry I didn't use a table head <thead> and table body <tbody> so I put one in, even though it renders the same without :/
         return (
               <div id="reliefListings">
                   <table>
