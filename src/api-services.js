@@ -7,7 +7,7 @@ const URL = `https://covid-19-backend.herokuapp.com/`;
 // GET route for all funds
 export const getAllFunds = async () => {
     const data = await request.get(`${URL}/listings`);
-    return data.body;
+    return data;
 }
 
 // GET route to retrieve single fund by its id
