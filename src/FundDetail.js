@@ -4,16 +4,19 @@ import { getFund } from './api-services'
 export default class FundDetail extends Component {
 
   state = { fund: [] }
-  
+
+  //hits our API and matches the fund ID to the user selected via params
   async componentDidMount() {
     const fund = await getFund(this.props.match.params.fundId);
-    console.log(fund)
+    // console.log(fund)
     if (fund) {
         this.setState({fund: fund})
     }
 } 
   render() {
-    const fund = this.state.fund;
+    //just so we don't have to type this.state.fund for each field : )
+    const { fund } = this.state;
+    // a turnary was used for the assistance link as not all of them have one... if there isn't one present it just returns an empty string... tried an if statement but couldn't get it to work... maybe one of you can come up with a better solution : ) also needs some CSS love
     return (
           <div className='fund-detail'>
               <h3>{fund.name_of_fund}</h3>
