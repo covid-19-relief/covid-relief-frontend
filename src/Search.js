@@ -1,12 +1,11 @@
   
 import React, { Component } from 'react'
-import List from './List';
+// import List from './List';
 import './search.css';
 
 export default class Search extends Component {
-    // initialize state
     state = { 
-        // fundState: [],
+        fundState: [],
         input: ''
     }
     
@@ -15,14 +14,20 @@ export default class Search extends Component {
             <div>
             <form onSubmit={this.props.handleSearch}>
                 <input type="text" onChange={this.props.handleChange} />
-                <button>Search</button>
+                <button disabled={this.state.loading}>Search</button>
             </form>
+            {/* {
+                    this.state.loading 
+                    ? "loading!!"
+                    : <List 
+                    fundState={this.state.fundState} /> 
+                  }   */}
             <form>
                 <label>State: 
                     <select className="dropdown"
                         name="state" 
                         value={this.state.fundState} 
-                        // onChange={(e) => this.props.handleState(e.target.value)}
+                        onChange={(e) => this.props.handleState(e.target.value)}
                         defaultValue=""
                     >
                         {/* <option value="" selected disabled hidden>--</option> */}
@@ -81,20 +86,4 @@ export default class Search extends Component {
             </div>
         )
     }
-    //         <div className='search'>
-    //             <form onSubmit={this.props.handleSearch}>
-    //       <input type="text" onChange={this.props.handleChange} />
-    //             {/* <form onSubmit={this.props.handleSearch(this.state.input)}> */}
-    //               {/* <input value={this.state.input} onChange={(e) => this.setState({ input: e.target.value })} /> */}
-    //               <button disabled={this.state.loading}>Search</button>
-    //             </form>
-
-    //               {
-    //                 this.state.loading 
-    //                 ? "loading!!"
-    //                 : <List 
-    //                 fundState={this.state.fundState} /> 
-    //               }  
-    //         </div>
-    //     ) }
 }

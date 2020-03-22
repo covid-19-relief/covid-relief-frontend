@@ -18,13 +18,14 @@ export const getFund = async (id) => {
 
 // GET route to retrieve funds by state
 export const getFundsByState = async (state) => {
-  const result = await request.get(`${URL}/listings/state/${state.id}`);
+  const result = await request.get(`${URL}/listings/state/${state}`);
+  console.log(state);
   return result.body;
 }
 
 // GET route to retrieve funds by country
 export const getFundsByCountry = async (country) => {
-  const result = await request.get(`${URL}/listings/country/${country.id}`);
+  const result = await request.get(`${URL}/listings/country/${country}`);
   return result.body;
 }
 
