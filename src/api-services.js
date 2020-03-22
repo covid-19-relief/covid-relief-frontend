@@ -72,17 +72,17 @@ export const logInUser = async (param) => {
 // POST route for creating a listing
 export const createNewListing = async (listing) => {
   const user = getUserFromLocalStorage();
-  const result = await request.post(`${URL}/api/admin/listings`, listing).set('Authorization', user.token);
+  await request.post(`${URL}/api/admin/listings`, listing).set('Authorization', user.token);
 }
 
 // POST route to update listing
 export const updateListing = async (listing, matchingListing) => {
   const user = getUserFromLocalStorage();
-  const result = await request.put(`${URL}/api/admin/listings/${listing.id}`, matchingListing).set('Authorization', user.token);
+  await request.put(`${URL}/api/admin/listings/${listing.id}`, matchingListing).set('Authorization', user.token);
 }
 
 // DELETE route to remove listing
 export const deleteListing = async (listing) => {
   const user = getUserFromLocalStorage();
-  const result = await request.delete(`${URL}/api/admin/listings/${listing.id}`).set('Authorization', user.token);
+  await request.delete(`${URL}/api/admin/listings/${listing.id}`).set('Authorization', user.token);
 }

@@ -6,7 +6,7 @@ export default class Header extends Component {
     render() {
         return (
             <header className="App-header">
-                <Link to='/'><h1>COVID 19 Relief</h1></Link>
+                <Link to='/'><h1>COVID-19 Aid Funds</h1></Link>
                 <h6 id="tag-line">some tagline here?</h6>
                 <MainNav />
             </header>  
