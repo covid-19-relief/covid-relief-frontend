@@ -14,10 +14,10 @@ export default class Home extends Component {
         loading: false
     }
     
-    async componentDidMount()  {
+    async componentDidMount() {
         // const result = await getPagedFunds(1);
-        const data = await getAllFunds();
-        this.setState({funds: data.body})
+        const allListings = await getAllFunds();
+        this.setState({resListings: allListings})
         // this.setState({ data: result });
     }
     
@@ -29,51 +29,32 @@ export default class Home extends Component {
     //     this.setState({ data: result });        
     // }
 
-    // handleSearch = (input) => async (e) => {
-    //     e.preventDefault();
-    //     this.setState({ loading: true });
-    //     const data = await getFundsBySearch(input)
-    //     this.setState({
-    //         fundState: data,
-    //         funds: data,
-    //         loading: false
-    //     });
-    // }
-
-    handleSearch = async (event) => {
-        event.preventDefault();
-        const data = await getFundsBySearch(this.state.searchQuery);
-        console.log(data.body);
+    handleSearch = (input) => async (e) => {
+        e.preventDefault();
+        this.setState({ loading: true });
+        const data = getFundsBySearch(input)
         this.setState({
             fundState: data,
             funds: data,
             loading: false
-        })
+        });
     }
 
-    handleChange = (event) => {
+    handleState = async (stateValue) => {
+        const data = getFundsByState(stateValue)
         this.setState({
-            searchQuery: event.target.value
-        })
+            fundState: data,
+            funds: data,
+            loading: false
+        });
     }
-
-    // handleState = async (stateValue) => {
-    //     const data = await getFundsByState(stateValue)
-    //     this.setState({
-    //         fundState: data,
-    //         funds: data,
-    //         loading: false
-    //     });
-    // }
 
     render() {
-        console.log('funds in state', this.state.funds)
         return (
             <div>
                 <Search 
-                    handleChange={this.handleChange} 
-                    handleSearch={this.handleSearch} 
-                    // handleState={this.handleState}
+                    handleSearch={this.handleSearch}
+                    handleState={this.handleState}
                 />
                 <List funds={this.state.funds} />
             </div>

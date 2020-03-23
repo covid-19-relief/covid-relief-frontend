@@ -3,7 +3,6 @@ import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import Header from './Header';
 import Home from './Home';
 import About from './About';
-import Submit from './Submit';
 import Resources from './Resources';
 import FundDetail from './FundDetail';
 import Search from './Search';
@@ -47,14 +46,14 @@ render() {
       <div className="App">
         <Header />
         <Switch>
-          {/* <Route path='/search' component={Search}/> */}
+          <Route path='/search' component={Search}/>
           {/* <PrivateRoute exact path='/bookmarks' component={Bookmarks} user={this.state.user}/>
           <PrivateRoute exact path='/add' component={AddResidency} user={this.state.user} />
           <PrivateRoute exact path='/edit/:id' component={EditResidency} user={this.state.user} />
           <PrivateRoute exact path='/my/listings/' component={MyResidencies} user={this.state.user} />
           <Route exact path='/map' component={GMap} />
           <Route exact path='/login' render={(props) => <Login {...props} setUser={ this.setUser } user={this.state.user } />} /> */}
-          <Route path='/submit' component={Submit} />
+          <Route path='/about' component={About} />
           <Route path='/resources' component={Resources} />
           <Route exact path="/listings/:fundId" render={(props) => <FundDetail {...props} />} />
           {/* <Route exact path="/admin/listings" component={ResidencyTable} />
