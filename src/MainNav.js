@@ -5,8 +5,8 @@ export default class MainNav extends Component {
     render() {
         return (
                 <nav>
-                    <Link to='/home'>Home</Link>
-                    <Link to='/resources'>Resources</Link>
+                    <Link to='/home'>Relief Funds</Link>
+                    <Link to='/resources'>Other Resources</Link>
                     <Link to='/submit'>Submit or Claim a Fund</Link>
                     {/* Add admin links here? */}
                     {/* <div className='welcome'>

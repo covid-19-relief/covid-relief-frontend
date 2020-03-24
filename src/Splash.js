@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class Splash extends Component {
   render() {
     return (
-      <div>
+      <div class="splash-body">
         <p>The coronavirus pandemic is creating unprecedented medical and economic challenges.  In addition to exposing long-standing gaps in our public health infrastructure, the virus and the associated pandemic mitigation measures are straining the financial resources of individuals, communities, and local governments to the breaking point.</p>
         <p>We need to do what we can to #FlattenTheCurve, including complying with public restrictions on non-essential activities and working remotely. But as we know, pandemic mitigation measures hit some people harder than others. <a href="https://www.theatlantic.com/politics/archive/2020/03/covid-19s-devastating-effects-jobs-and-businesses/608461/">Economic experts expect job losses in the millions.</a> Other workers are unable to work from home, either because they are essential to fighting the pandemic or because their employers do not provide paid leave. These workers are at increased risk of contracting COVID-19 and incurring significant medical bills.</p>
         <h3>Using This Site</h3>
