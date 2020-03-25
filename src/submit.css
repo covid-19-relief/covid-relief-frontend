@@ -3,13 +3,31 @@
 };
 
 .submit-div {
-  margin-left: 10px;
-}
-
-h3 {
   margin-left: 15px;
 }
 
-ul {
-  float: right;
+.intro {
+  margin: 20px;
+  padding: 5px;
+  background-color: #f1f1f1;
+}
+
+.submit-body {
+  margin: 20px;
+  display: flex;
+
+}
+
+li {
+  list-style-type: circle;
+}
+
+.sidebar {
+  padding-top: 10px;
+  padding-left: 15px;
+  max-width: 50%;
+}
+
+iframe {
+  max-width: 50%;
 }

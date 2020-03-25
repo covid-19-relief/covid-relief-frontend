@@ -242,3 +242,7 @@ button:active {
 #top-state {
   color:white;
 }
+
+.splash-body {
+  margin-left: 15px;
+}
