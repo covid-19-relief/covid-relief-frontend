@@ -246,3 +246,19 @@ button:active {
 .splash-body {
   margin-left: 15px;
 }
+
+.search-forms-div {
+  height: 60px;
+  align-content: center;
+  margin-top: 30px;
+  margin-left: 150px;
+}
+
+.search-input {
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+form {
+  float: left;
+}
