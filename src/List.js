@@ -14,6 +14,7 @@ export default class List extends Component {
                       <tr>
                         <th>Relief Fund Name</th>
                         <th>Beneficiaries</th>
+                        <th>Administrator</th>
                         <th>State</th>
                       </tr>
                     </thead>

@@ -12,11 +12,12 @@ export default class Fund extends Component {
         return (         
             <tr>
                 <td>
-                  <Link to={`/listings/${this.props.item.id}`}>
+                    <Link to={`/listings/${this.props.item.id}`}>
                     {this.props.item.name_of_fund}
-                  </Link>
+                    </Link>
                 </td>
                 <td>{this.props.item.beneficiaries}</td>
+                <td>{this.props.item.administrator}</td>
                 <td>{this.props.item.state}</td>
             </tr>
             // <tr> className='fund-card'>
