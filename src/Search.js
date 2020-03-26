@@ -27,7 +27,7 @@ export default class Search extends Component {
                                 onChange={(e) => this.props.handleState(e.target.value)}
                                 defaultValue=""
                             >
-                                {/* <option value="" selected disabled hidden>--</option> */}
+                                <option value="">--</option>
                                 <option value="AL">AL</option>
                                 <option value="AK">AK</option>
                                 <option value="AZ">AZ</option>
@@ -81,7 +81,7 @@ export default class Search extends Component {
                         </label>
                     </form>
                     <form class="search-input" onSubmit={this.props.handleSearch}>
-                        <input type="text" onChange={this.props.handleChange} />
+                        <input type="text" value="Search by keyword, city, etc." onChange={this.props.handleChange} />
                         <button disabled={this.state.loading}>Search</button>
                     </form>
                 </div>

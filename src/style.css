@@ -210,7 +210,7 @@ button {
   display: inline-block;
   border: 2px dotted #ddd;
   padding: .5rem 1rem;
-  margin: 0;
+  margin-left: 10px;
   border-radius: 3px;
   text-decoration: none;
   background: #61dafb;
