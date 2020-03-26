@@ -81,7 +81,7 @@ export default class Search extends Component {
                         </label>
                     </form>
                     <form class="search-input" onSubmit={this.props.handleSearch}>
-                        <input type="text" value="Search by keyword, city, etc." onChange={this.props.handleChange} />
+                        <input type="text" onChange={this.props.handleChange} />
                         <button disabled={this.state.loading}>Search</button>
                     </form>
                 </div>
