@@ -12,10 +12,10 @@ export default class List extends Component {
                   <table>
                     <thead>
                       <tr>
-                        <th>Relief Fund Name</th>
-                        <th>Beneficiaries</th>
-                        <th>Administrator</th>
-                        <th>State</th>
+                        <th width="40%">Relief Fund Name</th>
+                        <th width="30%">Beneficiaries</th>
+                        <th width="20%">Administrator</th>
+                        <th width="10%">State</th>
                       </tr>
                     </thead>
                     <tbody>
