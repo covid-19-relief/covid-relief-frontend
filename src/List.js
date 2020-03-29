@@ -22,8 +22,7 @@ export default class List extends Component {
                       {funds.map(fund =><Fund item={fund}/>)}
                     </tbody>  
                   </table>
-              </div>
-                 
+              </div>                 
           );
         };
       };
