@@ -266,3 +266,29 @@ button:active {
 form {
   float: left;
 }
+
+table {
+  border: none;
+  width: 80%;
+}
+
+thead {
+  border: none;
+}
+
+table tr:nth-child(even){background-color: #ddf5fc;}
+
+table tr:hover {background-color: #aeccd4;}
+
+table th {
+  padding: 12px;
+  text-align: left;
+  font-size: 22px;
+  background-color: #72defb;
+  color: white;
+}
+
+td {
+  padding: 10px;
+  font-size: 18px;
+}
