@@ -1,7 +1,6 @@
 /* HEADER */
 * {
-  font-family: 'Bellota Text', cursive;
-}
+  font-family: 'Roboto Slab', serif;}
 .App-header {
   /* background-color: #282c34; */
   /* background-color: #fcfbfb; */
@@ -16,6 +15,10 @@
 .App-header h1 {
   /* color: #61dafb; */
   color: #fdfbfb;
+  /* font-family: 'Kanit', sans-serif; */
+  font-family: 'Exo', sans-serif;
+  font-weight: bold;
+  font-size: 65px;
 }
 
 .App-header nav a {
@@ -23,7 +26,7 @@
 }
 /* mouse over link */
 a:hover {
-  color: hotpink;
+  color: rgb(190, 113, 11);
   text-decoration: none;
 }
 
@@ -63,7 +66,7 @@ h2 {
 
 header a:hover {
   /* color: #61dafb; */
-  color: hotpink;
+  color: rgb(190, 113, 11);
   text-decoration: none;
 }
 
@@ -210,7 +213,7 @@ button {
   display: inline-block;
   border: 2px dotted #ddd;
   padding: .5rem 1rem;
-  margin: 0;
+  margin-left: 10px;
   border-radius: 3px;
   text-decoration: none;
   background: #61dafb;
@@ -241,4 +244,72 @@ button:active {
 
 #top-state {
   color:white;
+}
+
+.splash-body {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.splash-intro {
+  max-width: 90%;
+  padding: 7px;
+}
+
+.splash-section {
+  max-width: 45%;
+  float: left;
+  border: solid 1px gray;
+  background-color: white;
+  box-shadow: 3px 5px rgb(112, 112, 112);
+  border-radius: 15px;
+  margin: 5px;
+  padding: 10px;
+}
+
+.search-forms-div {
+  height: 60px;
+  align-content: center;
+  margin-top: 30px;
+  margin-left: 150px;
+}
+
+.search-input {
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+form {
+  float: left;
+}
+
+table {
+  border: none;
+  width: 80%;
+}
+
+thead {
+  border: none;
+}
+
+table tr:nth-child(even){background-color: #ddf5fc;}
+
+table tr:hover {background-color: #aeccd4;}
+
+table th {
+  padding: 12px;
+  text-align: left;
+  font-size: 22px;
+  background-color: #72defb;
+  color: white;
+}
+
+td {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.main {
+  padding-left: 15px;
+  padding-top: 15px;
 }

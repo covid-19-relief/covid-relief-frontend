@@ -57,14 +57,14 @@ export default class Home extends Component {
         })
     }
 
-    // handleState = async (stateValue) => {
-    //     const data = await getFundsByState(stateValue)
-    //     this.setState({
-    //         fundState: data,
-    //         funds: data,
-    //         loading: false
-    //     });
-    // }
+    handleState = async (stateValue) => {
+        const data = await getFundsByState(stateValue)
+        this.setState({
+            fundState: data,
+            funds: data,
+            loading: false
+        });
+    }
 
     render() {
         console.log('funds in state', this.state.funds)
@@ -73,7 +73,7 @@ export default class Home extends Component {
                 <Search 
                     handleChange={this.handleChange} 
                     handleSearch={this.handleSearch} 
-                    // handleState={this.handleState}
+                    handleState={this.handleState}
                 />
                 <List funds={this.state.funds} />
             </div>
