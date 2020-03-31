@@ -46,6 +46,26 @@ export default class Resources extends Component {
                             <h3>PDX COVID-19 Resource list</h3>
                             <a href="https://docs.google.com/spreadsheets/d/1DKH9m36nzZuar563Ier1xPVIGY6Bb3kEDv1c2RcGgqM/htmlview">Comprehensive list of resources for people and communities affected by COVID-19 in the greater Portland area.</a>
                         </li> 
+                        <li> 
+                            <h3>Gig Worker COVID-19 Assistance</h3>
+                            <a href="https://www.gigworkerscollective.org/covid-19-resources">State-by-state resources for food, rent, utility, and medical bill assistance for gig workers.</a>
+                        </li> 
+                        <li> 
+                            <h3>No Neighbors in Need NYC</h3>
+                            <a href="https://docs.google.com/document/d/1TMcuBSpECMODwylVlJDl0Urooi0x-3C34O0ukLz_PEs/edit">List of resources for both those in need and those seeking to contribute to needs in NYC.  Includes many opportunities for in-kind donations.</a>
+                        </li> 
+                        <li> 
+                            <h3>COVID-19 Emergency Relief Resources for PDX</h3>
+                            <a href="https://docs.google.com/spreadsheets/d/1_vxTr5ze9Po3noASrmc3075x9EMsKZQczUe-QHsWADQ/htmlview">Comprehensive list of resources, including information for small businesses, for the Portland, OR area.  List was compiled by Congressman Earl Blumenauer's office.</a>
+                        </li> 
+                        <li> 
+                            <h3>Get Us PPE</h3>
+                            <a href="https://getusppe.org/">State-by-state listing of places to drop off Personal Protective Equipment (PPE) for health care workers.</a>
+                        </li> 
+                        <li> 
+                            <h3>Coronavirus Resource Kit</h3>
+                            <a href="https://docs.google.com/document/d/1Rcan4C_e6OBFBI5bUn7MtYK74Ab-WarxyJmDvZUI_YA/mobilebasic#h.eoz281asl25">Multi-region list of coronavirus resources - everything from mutual aid to state-based resources.</a>
+                        </li> 
                     </ul>
                 </main>
             </div>
