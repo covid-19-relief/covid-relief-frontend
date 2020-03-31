@@ -6,26 +6,31 @@
   margin-left: 15px;
 }
 
-.intro {
-  margin: 20px;
-  padding: 5px;
-  background-color: #f1f1f1;
+.submit-intro {
+  max-width: 95%;
+  float: left;
+  border: solid 1px gray;
+  background-color: white;
+  box-shadow: 3px 5px rgb(112, 112, 112);
+  border-radius: 15px;
+  margin: 5px;
+  padding: 10px;
 }
 
 .submit-body {
-  margin: 20px;
-  display: flex;
-
-}
-
-ul li {
-  list-style-type: circle;
+  max-width: 45%;
+  float: left;
+  border: solid 1px gray;
+  background-color: white;
+  box-shadow: 3px 5px rgb(112, 112, 112);
+  border-radius: 15px;
+  margin: 5px;
+  padding: 10px;
 }
 
 .sidebar {
   padding-top: 10px;
   padding-left: 15px;
-  max-width: 50%;
 }
 
 iframe {

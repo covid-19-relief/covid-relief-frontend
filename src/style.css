@@ -84,8 +84,8 @@ ul {
 }
 
 ul li {
-  list-style-type: none;
-  margin: 20px 0;
+  /* list-style-type: none; */
+  margin: 20px 10px;
 }
 
 li button {

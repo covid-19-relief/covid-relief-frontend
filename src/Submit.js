@@ -5,12 +5,11 @@ export default class Submit extends Component {
   render() {
     return (
       <div>
-        <div class="intro">
+        <div class="submit-intro">
           <h3>Submit/Claim a Fund</h3>
           <p>Please use this contact form if you would like us to add a fund to the list, if you are the administrator of one of the listed funds and would like to update it, or if you have information that one of the listed funds is fraudulent or no longer accepting donations.</p>
         </div>
         <div class="submit-body">
-          <iframe title="Submit" src="https://docs.google.com/forms/d/e/1FAIpQLSdLznzvOBamhp92mEFSF0Q0KZDHB18hMeslnKvBT6UVV5oYUw/viewform?embedded=true" width="640" height="2246" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
           <div class="sidebar">
             <h3>Here are the types of donation opportunities we'd like to add to our list:</h3>
               <ul>
@@ -27,6 +26,7 @@ export default class Submit extends Component {
               </ul>
           </div>
         </div>
+        <iframe title="Submit" src="https://docs.google.com/forms/d/e/1FAIpQLSdLznzvOBamhp92mEFSF0Q0KZDHB18hMeslnKvBT6UVV5oYUw/viewform?embedded=true" width="640" height="2246" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </div>
     )
   }
