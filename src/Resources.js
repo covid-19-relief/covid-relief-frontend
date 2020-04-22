@@ -66,6 +66,22 @@ export default class Resources extends Component {
                             <h3>Coronavirus Resource Kit</h3>
                             <a href="https://docs.google.com/document/d/1Rcan4C_e6OBFBI5bUn7MtYK74Ab-WarxyJmDvZUI_YA/mobilebasic#h.eoz281asl25">Multi-region list of coronavirus resources - everything from mutual aid to state-based resources.</a>
                         </li> 
+                        <li> 
+                            <h3>Economic Relief for Authors</h3>
+                            <a href="https://www.authorsguild.org/industry-advocacy/details-on-economic-relief-for-authors/">Updated list of financial resources for authors, including some state-level resources.</a>
+                        </li> 
+                        <li> 
+                            <h3>Relief Funds for Undocumented Workers in California // Alivio Financiero para Trabajadores Indocumentados de California</h3>
+                            <a href="https://legalaidatwork.org/blog/relief-funds/">Continuously updated list of relief and support funds available to undocumented workers in California, compiled by Legal Aid at Work.</a>
+                        </li> 
+                        <li> 
+                            <h3>Giving to Indigenous Reponses to COVID-19</h3>
+                            <a href="https://indigenouscovidresponse.com/">A compilation of fundraisers and support requests "for organizations and groups that serve Indian Country or Indigenous populations."</a>
+                        </li> 
+                        <li> 
+                            <h3>Business for a Better Portland</h3>
+                            <a href="https://bbpdx.switchboardhq.com/">A communication hub set up to allow businessowners to ask for or offer tools or support.</a>
+                        </li> 
                     </ul>
                 </main>
             </div>

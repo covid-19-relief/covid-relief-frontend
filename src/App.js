@@ -9,14 +9,6 @@ import FundDetail from './FundDetail';
 import Search from './Search';
 import Splash from './Splash';
 import { getUserFromLocalStorage } from './api-services';
-// import PrivateRoute from './PrivateRoute';
-// import Login from './Login';
-// import AddResidency from './AddResidency';
-// import EditResidency from './EditResidency';
-// import MyResidencies from './MyResidencies';
-// import ResidencyTable from './ResidencyTable';
-// import UserTable from './UserTable';
-// import GMap from './GMap';
 
 import './bootstrap-reboot.min.css';
 import './style.css';

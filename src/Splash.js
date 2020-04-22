@@ -22,7 +22,7 @@ export default class Splash extends Component {
           <h3>Other Ways To Help</h3>
           <p>Communities of all kinds are coming together to support each other during these difficult times.  This site is about how donate money, but we're also constantly updating our Resources page, which has other ways to help.</p>
           <p>If you want to join a mutual aid project in your community, we recommend <a href="https://www.mutualaidhub.org/">this excellent resource.</a></p>
-          <p>Our Resources page includes links to other lists compiled by people across the country, including some really great resources for specific communities.  If you are the administrator of such a list and you want us include it in our Resources page, or you would like your spreadsheet integrated into our comprehensive list, please email us at: covid19aidfunds [at] gmail [dot] com.</p>
+          <p>Our Resources page includes links to other lists compiled by people across the country, including some really great resources for specific communities.  If you are the administrator of such a list and you want us include it in our Resources page, or you would like your spreadsheet integrated into our comprehensive list, <a href="mailto:covid19aidfunds@gmail.com">please send us an email.</a></p>
         </div>
       </div>
     )
