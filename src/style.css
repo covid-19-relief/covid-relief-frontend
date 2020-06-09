@@ -313,3 +313,12 @@ td {
   padding-left: 15px;
   padding-top: 15px;
 }
+
+.fund-detail {
+  margin: 1rem;
+  padding: 1rem;
+  background: white;
+  border: solid 3px #55a5bb;
+  border-radius: 15px;
+  width: auto;
+}
